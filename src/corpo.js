@@ -1,4 +1,5 @@
 import Esquerda from "./esquerda";
+import FundoMobile from "./fundoMobile";
 import Sidebar from "./sidebar";
 
 export default function Corpo() {
@@ -6,6 +7,7 @@ export default function Corpo() {
     <div class="corpo">
       <Esquerda />
       <Sidebar />
+      <FundoMobile />
     </div>
   );
 }

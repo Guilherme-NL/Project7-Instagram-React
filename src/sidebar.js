@@ -17,7 +17,7 @@ export default function Sidebar() {
   return (
     <div class="sidebar">
       <div class="usuario">
-        <img src={catanacomics} />
+        <img src={catanacomics} alt="catanacomics" />
         <div class="texto">
           <strong>catanacomics</strong>
           Catana
