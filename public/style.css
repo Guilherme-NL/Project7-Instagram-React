@@ -3,9 +3,9 @@
 }
 
 body {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   margin: 54px 0 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #262626;
   font-weight: 400;
   font-size: 14px;
@@ -16,16 +16,17 @@ body {
   display: flex;
   justify-content: center;
   height: 54px;
-  border-bottom: 1px solid #DBDBDB;
+  border-bottom: 1px solid #dbdbdb;
   font-size: 22px;
-  background-color: #FFF;
+  background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
 }
 
-.navbar ion-icon, .navbar img {
+.navbar ion-icon,
+.navbar img {
   cursor: pointer;
 }
 
@@ -52,7 +53,7 @@ body {
 .navbar .logo .separador {
   width: 1px;
   height: 22px;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   margin: 0 10px;
 }
 
@@ -60,8 +61,8 @@ body {
   width: 215px;
   height: 28px;
   border-radius: 3px;
-  background-color: #FAFAFA;
-  border: 1px solid #DBDBDB;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
   color: #979797;
   text-align: center;
 }
@@ -80,6 +81,7 @@ body {
   width: 935px;
   margin: 0 auto;
   margin-top: 88px;
+  font-family: "Roboto", sans-serif;
 }
 
 .esquerda {
@@ -96,7 +98,7 @@ body {
   align-items: center;
   height: 118px;
   border-radius: 3px;
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
   padding: 0 18px;
   overflow: hidden;
   position: relative;
@@ -120,8 +122,7 @@ body {
   align-items: center;
   height: 66px;
   width: 66px;
-  background-image: url('../assets/img/story-circle.svg');
-  
+  background-image: url("/story-circle.svg");
 }
 
 .story .imagem img {
@@ -144,14 +145,14 @@ body {
   top: 45px;
   height: 32px;
   width: 32px;
-  color: #FFF;
+  color: #fff;
   font-size: 28px;
   cursor: pointer;
 }
 
 .post {
   border-radius: 3px;
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
   display: flex;
   flex-direction: column;
   margin-top: 18px;
@@ -165,7 +166,8 @@ body {
   font-weight: 500;
 }
 
-.post .topo .usuario, .post .topo .acoes {
+.post .topo .usuario,
+.post .topo .acoes {
   display: flex;
   align-items: center;
 }
@@ -176,7 +178,11 @@ body {
   margin-right: 10px;
 }
 
-.post .usuario, .post .topo img, .post .fundo img, .post ion-icon, .post strong {
+.post .usuario,
+.post .topo img,
+.post .fundo img,
+.post ion-icon,
+.post strong {
   cursor: pointer;
 }
 
@@ -234,7 +240,7 @@ body {
   flex-direction: column;
   margin-left: 14px;
   font-weight: 300;
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 
 .sidebar > .usuario .texto strong {
@@ -268,7 +274,7 @@ body {
 }
 
 .sidebar .sugestoes .seguir {
-  color: #139EF2;
+  color: #139ef2;
   font-weight: 600;
 }
 
@@ -280,14 +286,15 @@ body {
 }
 
 .sidebar .sugestoes .sugestao .usuario .texto :last-child {
-  color: #8E8E8E;
+  color: #8e8e8e;
   font-weight: 400;
 }
 
-.links, .copyright {
+.links,
+.copyright {
   font-size: 11px;
-  color: #C7C7C7;
-} 
+  color: #c7c7c7;
+}
 
 .links {
   margin-top: 40px;
@@ -306,7 +313,8 @@ body {
   cursor: pointer;
 }
 
-.logo-mobile, .instagram-mobile {
+.logo-mobile,
+.instagram-mobile {
   display: none !important;
 }
 
@@ -327,7 +335,7 @@ body {
 
 @media (max-width: 614px) {
   .corpo {
-    margin-top: 0;
+    margin-top: 54px;
   }
 
   .post {
@@ -369,8 +377,8 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 24px;
-    background-color: #FFF;
-    border-top: 1px solid #DBDBDB;
+    background-color: #fff;
+    border-top: 1px solid #dbdbdb;
     height: 54px;
     width: 100%;
     position: fixed;
@@ -382,7 +390,8 @@ body {
     display: none;
   }
 
-  .logo-mobile, .instagram-mobile {
+  .logo-mobile,
+  .instagram-mobile {
     display: flex !important;
   }
 

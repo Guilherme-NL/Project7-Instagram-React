@@ -13,19 +13,25 @@ const sugestoes = [
   { image: smallcutecats, name: "smallcutecats" },
 ];
 
+function User() {
+  return (
+    <div className="usuario">
+      <img src={catanacomics} alt="catanacomics" />
+      <div className="texto">
+        <strong>catanacomics</strong>
+        Catana
+      </div>
+    </div>
+  );
+}
+
 export default function Sidebar() {
   return (
-    <div class="sidebar">
-      <div class="usuario">
-        <img src={catanacomics} alt="catanacomics" />
-        <div class="texto">
-          <strong>catanacomics</strong>
-          Catana
-        </div>
-      </div>
+    <div className="sidebar">
+      <User userImg={{ catanacomics }} userName="catanacomics" />
 
-      <div class="sugestoes">
-        <div class="titulo">
+      <div className="sugestoes">
+        <div className="titulo">
           Sugestões para você
           <div>Ver tudo</div>
         </div>
@@ -45,12 +51,12 @@ export default function Sidebar() {
         ))}
       </div>
 
-      <div class="links">
+      <div className="links">
         Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
         Localizações • Contas mais relevantes • Hashtags • Idioma
       </div>
 
-      <div class="copyright">© 2021 INSTAGRAM DO FACEBOOK</div>
+      <div className="copyright">© 2021 INSTAGRAM DO FACEBOOK</div>
     </div>
   );
 }
