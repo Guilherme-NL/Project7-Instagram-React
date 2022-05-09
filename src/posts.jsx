@@ -10,6 +10,8 @@ import adorableAnimals from "./assets/img/adorable_animals.svg";
 
 const posts = [
   {
+    id: 1,
+    liked: false,
     userImg: meowed,
     userName: "meowed",
     contentImg: gatoTelefone,
@@ -19,6 +21,8 @@ const posts = [
     likes: "101.523",
   },
   {
+    id: 2,
+    liked: false,
     userImg: barked,
     userName: "barked",
     contentImg: dog,
@@ -29,10 +33,19 @@ const posts = [
   },
 ];
 
-export default function Posts() {
+function LikeButton() {
   const [liked, setLiked] = React.useState(false);
   const toggle = () => setLiked(!liked);
+  return (
+    <ion-icon
+      onClick={toggle}
+      style={liked ? { color: "red" } : {}}
+      name={liked ? "heart-sharp" : "heart-outline"}
+    ></ion-icon>
+  );
+}
 
+export default function Posts() {
   return (
     <div className="posts">
       {posts.map((post) => (
@@ -54,11 +67,7 @@ export default function Posts() {
           <div className="fundo">
             <div className="acoes">
               <div>
-                <ion-icon
-                  onClick={toggle}
-                  style={liked ? { color: "red" } : {}}
-                  name={liked ? "heart-sharp" : "heart-outline"}
-                ></ion-icon>
+                <LikeButton />
                 <ion-icon name="chatbubble-outline"></ion-icon>
                 <ion-icon name="paper-plane-outline"></ion-icon>
               </div>
