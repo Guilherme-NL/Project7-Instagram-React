@@ -1,3 +1,5 @@
+import React from "react";
+
 import meowed from "./assets/img/meowed.svg";
 import gatoTelefone from "./assets/img/gato-telefone.svg";
 import respondeAi from "./assets/img/respondeai.svg";
@@ -28,6 +30,9 @@ const posts = [
 ];
 
 export default function Posts() {
+  const [liked, setLiked] = React.useState(false);
+  const toggle = () => setLiked(!liked);
+
   return (
     <div className="posts">
       {posts.map((post) => (
@@ -49,7 +54,11 @@ export default function Posts() {
           <div className="fundo">
             <div className="acoes">
               <div>
-                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon
+                  onClick={toggle}
+                  style={liked ? { color: "red" } : {}}
+                  name={liked ? "heart-sharp" : "heart-outline"}
+                ></ion-icon>
                 <ion-icon name="chatbubble-outline"></ion-icon>
                 <ion-icon name="paper-plane-outline"></ion-icon>
               </div>
